@@ -1,6 +1,19 @@
-## Git
+# Git
 
-### Push a `new` repo to remote using `ssh` on a machine that has mltiple user profiles
+## Add profile to ssh config
+
+```
+cd ~/.ssh
+ssh-keygen -t rsa -C "patki.aakash@gmail.com" -f "default"
+ssh-keygen -t rsa -C "patki.aakash@gmail.com" -f "apat"
+
+pbcopy < ~/.ssh/apat.pub
+pbcopy < ~/.ssh/default.pub
+```
+
+Add the files created from above command to the `ssh config`. Refer the [config file](../configs/config)
+
+## Push a `new` repo to remote using `ssh` on a machine that has mltiple user profiles
 
 ```
 git remote add origin git@github-apat:keycache/dj-drf-template.git

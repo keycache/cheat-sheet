@@ -1,0 +1,9 @@
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/default
+
+Host github-apat
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/apat
