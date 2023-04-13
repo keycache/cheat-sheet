@@ -1,5 +1,18 @@
 # Git
 
+## Rename branch
+
+```
+git branch -m <newname>
+git branch -m <oldname> <newname>
+```
+
+## Create branch from current branch
+
+```
+git checkout -b branch_name
+```
+
 ## Add profile to ssh config
 
 ```
